@@ -19,19 +19,20 @@ class AvrApp(object):
         print("Up volume is: ", d.zones["Zone2"].volume)
 
     @rumps.clicked("Volume -")
-    def volume_up(self):
+    def volume_down(self):
         d.zones["Zone2"].volume_down()
         d.zones["Zone2"].update()
         print("Down volume is: ", d.zones["Zone2"].volume)
 
     @rumps.clicked("Mute On")
-    def volume_up(self):
+    def mute_on(self):
         d.zones["Zone2"].mute(True)
         d.zones["Zone2"].update()
 
     @rumps.clicked("Mute Off")
-    def volume_up(self):
+    def mute_off(self):
         d.zones["Zone2"].mute(False)
+
         d.zones["Zone2"].update()
 
     def run(self):
