@@ -232,3 +232,4 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm+all
+.DS_Store
